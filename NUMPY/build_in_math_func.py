@@ -1,0 +1,11 @@
+import numpy as np
+arr = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+print(np.mean(arr))
+print(np.max(arr))
+print(np.std(arr))
+print(np.percentile(arr, 50) )
+print(np.argmin(arr))
+print(np.argmax(arr))
+print(np.unique(arr))
+print(np.cumsum(arr))
+print(np.log(arr))

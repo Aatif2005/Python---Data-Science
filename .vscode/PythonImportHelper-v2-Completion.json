@@ -1,0 +1,1511 @@
+[
+    {
+        "label": "runpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "runpy",
+        "description": "runpy",
+        "detail": "runpy",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "pprint",
+        "importPath": "pprint",
+        "description": "pprint",
+        "isExtraImport": true,
+        "detail": "pprint",
+        "documentation": {}
+    },
+    {
+        "label": "pprint",
+        "importPath": "pprint",
+        "description": "pprint",
+        "isExtraImport": true,
+        "detail": "pprint",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len('Scripts') - 1]  # ty: ignore[unresolved-reference]\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = '' or os.path.basename(base)  # ty: ignore[unresolved-reference]\n# Set PKG_CONFIG_PATH to include the virtualenv's pkgconfig directory\npkg_config_path = os.path.join(base, \"lib\", \"pkgconfig\")\nexisting_pkg_config_path = os.environ.get(\"PKG_CONFIG_PATH\", \"\")\nif existing_pkg_config_path:",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "base = bin_dir[: -len('Scripts') - 1]  # ty: ignore[unresolved-reference]\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = '' or os.path.basename(base)  # ty: ignore[unresolved-reference]\n# Set PKG_CONFIG_PATH to include the virtualenv's pkgconfig directory\npkg_config_path = os.path.join(base, \"lib\", \"pkgconfig\")\nexisting_pkg_config_path = os.environ.get(\"PKG_CONFIG_PATH\", \"\")\nif existing_pkg_config_path:\n    os.environ[\"PKG_CONFIG_PATH\"] = os.pathsep.join([pkg_config_path, existing_pkg_config_path])",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = '' or os.path.basename(base)  # ty: ignore[unresolved-reference]\n# Set PKG_CONFIG_PATH to include the virtualenv's pkgconfig directory\npkg_config_path = os.path.join(base, \"lib\", \"pkgconfig\")\nexisting_pkg_config_path = os.environ.get(\"PKG_CONFIG_PATH\", \"\")\nif existing_pkg_config_path:\n    os.environ[\"PKG_CONFIG_PATH\"] = os.pathsep.join([pkg_config_path, existing_pkg_config_path])\nelse:\n    os.environ[\"PKG_CONFIG_PATH\"] = pkg_config_path",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = '' or os.path.basename(base)  # ty: ignore[unresolved-reference]\n# Set PKG_CONFIG_PATH to include the virtualenv's pkgconfig directory\npkg_config_path = os.path.join(base, \"lib\", \"pkgconfig\")\nexisting_pkg_config_path = os.environ.get(\"PKG_CONFIG_PATH\", \"\")\nif existing_pkg_config_path:\n    os.environ[\"PKG_CONFIG_PATH\"] = os.pathsep.join([pkg_config_path, existing_pkg_config_path])\nelse:\n    os.environ[\"PKG_CONFIG_PATH\"] = pkg_config_path\n# add the virtual environments libraries to the host python import mechanism",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = '' or os.path.basename(base)  # ty: ignore[unresolved-reference]\n# Set PKG_CONFIG_PATH to include the virtualenv's pkgconfig directory\npkg_config_path = os.path.join(base, \"lib\", \"pkgconfig\")\nexisting_pkg_config_path = os.environ.get(\"PKG_CONFIG_PATH\", \"\")\nif existing_pkg_config_path:\n    os.environ[\"PKG_CONFIG_PATH\"] = os.pathsep.join([pkg_config_path, existing_pkg_config_path])\nelse:\n    os.environ[\"PKG_CONFIG_PATH\"] = pkg_config_path\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "pkg_config_path",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "pkg_config_path = os.path.join(base, \"lib\", \"pkgconfig\")\nexisting_pkg_config_path = os.environ.get(\"PKG_CONFIG_PATH\", \"\")\nif existing_pkg_config_path:\n    os.environ[\"PKG_CONFIG_PATH\"] = os.pathsep.join([pkg_config_path, existing_pkg_config_path])\nelse:\n    os.environ[\"PKG_CONFIG_PATH\"] = pkg_config_path\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in '..\\\\Lib\\\\site-packages'.split(os.pathsep):  # ty: ignore[unresolved-reference]\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "existing_pkg_config_path",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "existing_pkg_config_path = os.environ.get(\"PKG_CONFIG_PATH\", \"\")\nif existing_pkg_config_path:\n    os.environ[\"PKG_CONFIG_PATH\"] = os.pathsep.join([pkg_config_path, existing_pkg_config_path])\nelse:\n    os.environ[\"PKG_CONFIG_PATH\"] = pkg_config_path\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in '..\\\\Lib\\\\site-packages'.split(os.pathsep):  # ty: ignore[unresolved-reference]\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if '' else path)  # ty: ignore[unresolved-reference,unresolved-attribute]",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in '..\\\\Lib\\\\site-packages'.split(os.pathsep):  # ty: ignore[unresolved-reference]\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if '' else path)  # ty: ignore[unresolved-reference,unresolved-attribute]\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix  # ty: ignore[unresolved-attribute]\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix  # ty: ignore[unresolved-attribute]\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix  # ty: ignore[unresolved-attribute]\nsys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": ".venv.Scripts.activate_this",
+        "description": ".venv.Scripts.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": ".venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "parse_chunk",
+        "kind": 2,
+        "importPath": "CODERS OF BANGLORE.final_data",
+        "description": "CODERS OF BANGLORE.final_data",
+        "peekOfCode": "def parse_chunk(chunk):\n    chunk = chunk.strip()\n    sep_chunk = chunk.split('\\n')\n    username = sep_chunk[0]\n    no_of_posts = int(sep_chunk[1].split(\"post\")[0].replace(\",\", \"\").strip())\n    follower_str = sep_chunk[2].split(\"followers\")[0].replace(\",\", \"\").strip()\n    if \"K\" in sep_chunk[2]:\n        no_of_followers = int(float(follower_str.replace(\"K\", \"\")) * 1000)\n    elif \"M\" in sep_chunk[2]:\n        no_of_followers = int(float(follower_str.replace(\"M\", \"\")) * 1000000)",
+        "detail": "CODERS OF BANGLORE.final_data",
+        "documentation": {}
+    },
+    {
+        "label": "chunks",
+        "kind": 5,
+        "importPath": "CODERS OF BANGLORE.final_data",
+        "description": "CODERS OF BANGLORE.final_data",
+        "peekOfCode": "chunks = data.split(\"\\n\\n\")\nchunks = [c for c in chunks if len(c) > 3]\ndef parse_chunk(chunk):\n    chunk = chunk.strip()\n    sep_chunk = chunk.split('\\n')\n    username = sep_chunk[0]\n    no_of_posts = int(sep_chunk[1].split(\"post\")[0].replace(\",\", \"\").strip())\n    follower_str = sep_chunk[2].split(\"followers\")[0].replace(\",\", \"\").strip()\n    if \"K\" in sep_chunk[2]:\n        no_of_followers = int(float(follower_str.replace(\"K\", \"\")) * 1000)",
+        "detail": "CODERS OF BANGLORE.final_data",
+        "documentation": {}
+    },
+    {
+        "label": "chunks",
+        "kind": 5,
+        "importPath": "CODERS OF BANGLORE.final_data",
+        "description": "CODERS OF BANGLORE.final_data",
+        "peekOfCode": "chunks = [c for c in chunks if len(c) > 3]\ndef parse_chunk(chunk):\n    chunk = chunk.strip()\n    sep_chunk = chunk.split('\\n')\n    username = sep_chunk[0]\n    no_of_posts = int(sep_chunk[1].split(\"post\")[0].replace(\",\", \"\").strip())\n    follower_str = sep_chunk[2].split(\"followers\")[0].replace(\",\", \"\").strip()\n    if \"K\" in sep_chunk[2]:\n        no_of_followers = int(float(follower_str.replace(\"K\", \"\")) * 1000)\n    elif \"M\" in sep_chunk[2]:",
+        "detail": "CODERS OF BANGLORE.final_data",
+        "documentation": {}
+    },
+    {
+        "label": "all_chunks",
+        "kind": 5,
+        "importPath": "CODERS OF BANGLORE.final_data",
+        "description": "CODERS OF BANGLORE.final_data",
+        "peekOfCode": "all_chunks = []\nfor chunk in chunks:\n    parsed_chunk = parse_chunk(chunk)\n    all_chunks.append(parsed_chunk)\nmax_followers = 0\nfor chunk in all_chunks:\n    if chunk['no_of_followers'] > max_followers:\n        max_followers = chunk['no_of_followers']\n        chunk_with_max_followers = chunk\npprint(chunk_with_max_followers)",
+        "detail": "CODERS OF BANGLORE.final_data",
+        "documentation": {}
+    },
+    {
+        "label": "max_followers",
+        "kind": 5,
+        "importPath": "CODERS OF BANGLORE.final_data",
+        "description": "CODERS OF BANGLORE.final_data",
+        "peekOfCode": "max_followers = 0\nfor chunk in all_chunks:\n    if chunk['no_of_followers'] > max_followers:\n        max_followers = chunk['no_of_followers']\n        chunk_with_max_followers = chunk\npprint(chunk_with_max_followers)\nmax_following = 0\nfor chunk in all_chunks:\n    if chunk['no_of_following'] > max_following:\n        max_followers = chunk['no_of_following']",
+        "detail": "CODERS OF BANGLORE.final_data",
+        "documentation": {}
+    },
+    {
+        "label": "max_following",
+        "kind": 5,
+        "importPath": "CODERS OF BANGLORE.final_data",
+        "description": "CODERS OF BANGLORE.final_data",
+        "peekOfCode": "max_following = 0\nfor chunk in all_chunks:\n    if chunk['no_of_following'] > max_following:\n        max_followers = chunk['no_of_following']\n        chunk_with_max_following = chunk\npprint(chunk_with_max_following)\ncategories = set()\nfor chunk in all_chunks:\n    categories.add(chunk['type_of_page'])\npprint(categories)",
+        "detail": "CODERS OF BANGLORE.final_data",
+        "documentation": {}
+    },
+    {
+        "label": "categories",
+        "kind": 5,
+        "importPath": "CODERS OF BANGLORE.final_data",
+        "description": "CODERS OF BANGLORE.final_data",
+        "peekOfCode": "categories = set()\nfor chunk in all_chunks:\n    categories.add(chunk['type_of_page'])\npprint(categories)\nprint(categories, len(categories))\nimport json\ns = json.dumps(all_chunks, indent = 4)\nwith open(\"finaldata.json\", \"w\") as f:\n    f.write(s)\n#print(s)",
+        "detail": "CODERS OF BANGLORE.final_data",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "CODERS OF BANGLORE.final_data",
+        "description": "CODERS OF BANGLORE.final_data",
+        "peekOfCode": "s = json.dumps(all_chunks, indent = 4)\nwith open(\"finaldata.json\", \"w\") as f:\n    f.write(s)\n#print(s)",
+        "detail": "CODERS OF BANGLORE.final_data",
+        "documentation": {}
+    },
+    {
+        "label": "chunks",
+        "kind": 5,
+        "importPath": "CODERS OF BANGLORE.openAI",
+        "description": "CODERS OF BANGLORE.openAI",
+        "peekOfCode": "chunks = data.split(\"\\n\\n\")\nprint(data)\n'''def parse_chunk(chunk):\n    chunk = chunk.strip()\n    sep_chunk = chunk.split('\\n')\n    username = sep_chunk[0]\n    no_of_posts = sep_chunk[1]\n    no_of_followers = sep_chunk[2]\n    no_of_following = sep_chunk[3]\n    name = sep_chunk[4]",
+        "detail": "CODERS OF BANGLORE.openAI",
+        "documentation": {}
+    },
+    {
+        "label": "parse_chunk",
+        "kind": 2,
+        "importPath": "CODERS OF BANGLORE.parse_chunk",
+        "description": "CODERS OF BANGLORE.parse_chunk",
+        "peekOfCode": "def parse_chunk(chunk):\n    try:\n        chunk = chunk.strip()\n        sep_chunk = chunk.split('\\n')\n        username = sep_chunk[0]\n        no_of_posts = sep_chunk[1]\n        no_of_followers = sep_chunk[2]\n        no_of_following = sep_chunk[3]\n        name = sep_chunk[4]\n        if len(sep_chunk) >= 5:",
+        "detail": "CODERS OF BANGLORE.parse_chunk",
+        "documentation": {}
+    },
+    {
+        "label": "chunks",
+        "kind": 5,
+        "importPath": "CODERS OF BANGLORE.parse_chunk",
+        "description": "CODERS OF BANGLORE.parse_chunk",
+        "peekOfCode": "chunks = data.split(\"\\n\\n\")\nchunks = [c for c in chunks if len(c) > 3]\n#print(chunks)\ndef parse_chunk(chunk):\n    try:\n        chunk = chunk.strip()\n        sep_chunk = chunk.split('\\n')\n        username = sep_chunk[0]\n        no_of_posts = sep_chunk[1]\n        no_of_followers = sep_chunk[2]",
+        "detail": "CODERS OF BANGLORE.parse_chunk",
+        "documentation": {}
+    },
+    {
+        "label": "chunks",
+        "kind": 5,
+        "importPath": "CODERS OF BANGLORE.parse_chunk",
+        "description": "CODERS OF BANGLORE.parse_chunk",
+        "peekOfCode": "chunks = [c for c in chunks if len(c) > 3]\n#print(chunks)\ndef parse_chunk(chunk):\n    try:\n        chunk = chunk.strip()\n        sep_chunk = chunk.split('\\n')\n        username = sep_chunk[0]\n        no_of_posts = sep_chunk[1]\n        no_of_followers = sep_chunk[2]\n        no_of_following = sep_chunk[3]",
+        "detail": "CODERS OF BANGLORE.parse_chunk",
+        "documentation": {}
+    },
+    {
+        "label": "all_chunks",
+        "kind": 5,
+        "importPath": "CODERS OF BANGLORE.parse_chunk",
+        "description": "CODERS OF BANGLORE.parse_chunk",
+        "peekOfCode": "all_chunks = []\nfor chunk in chunks:\n    print(f\"The chunk is: {chunk}\")\n    parsed_chunk = parse_chunk(chunk)          # ✅ fixed: parse_chunk → parsed_chunk\n    all_chunks.append(parsed_chunk)\nprint(all_chunks)\nimport json\ns = json.dumps(all_chunks, indent = 4)\nprint(s)",
+        "detail": "CODERS OF BANGLORE.parse_chunk",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "CODERS OF BANGLORE.parse_chunk",
+        "description": "CODERS OF BANGLORE.parse_chunk",
+        "peekOfCode": "s = json.dumps(all_chunks, indent = 4)\nprint(s)",
+        "detail": "CODERS OF BANGLORE.parse_chunk",
+        "documentation": {}
+    },
+    {
+        "label": "parse_chunk",
+        "kind": 2,
+        "importPath": "CODERS OF BANGLORE.pepole_max_follow",
+        "description": "CODERS OF BANGLORE.pepole_max_follow",
+        "peekOfCode": "def parse_chunk(chunk):\n    chunk = chunk.strip()\n    sep_chunk = chunk.split('\\n')\n    username = sep_chunk[0]\n    no_of_posts = int(sep_chunk[1].split(\"post\")[0].replace(\",\", \"\").strip())\n    follower_str = sep_chunk[2].split(\"followers\")[0].replace(\",\", \"\").strip()\n    if \"K\" in sep_chunk[2]:\n        no_of_followers = int(float(follower_str.replace(\"K\", \"\")) * 1000)\n    elif \"M\" in sep_chunk[2]:\n        no_of_followers = int(float(follower_str.replace(\"M\", \"\")) * 1000000)",
+        "detail": "CODERS OF BANGLORE.pepole_max_follow",
+        "documentation": {}
+    },
+    {
+        "label": "chunks",
+        "kind": 5,
+        "importPath": "CODERS OF BANGLORE.pepole_max_follow",
+        "description": "CODERS OF BANGLORE.pepole_max_follow",
+        "peekOfCode": "chunks = data.split(\"\\n\\n\")\nchunks = [c for c in chunks if len(c) > 3]\ndef parse_chunk(chunk):\n    chunk = chunk.strip()\n    sep_chunk = chunk.split('\\n')\n    username = sep_chunk[0]\n    no_of_posts = int(sep_chunk[1].split(\"post\")[0].replace(\",\", \"\").strip())\n    follower_str = sep_chunk[2].split(\"followers\")[0].replace(\",\", \"\").strip()\n    if \"K\" in sep_chunk[2]:\n        no_of_followers = int(float(follower_str.replace(\"K\", \"\")) * 1000)",
+        "detail": "CODERS OF BANGLORE.pepole_max_follow",
+        "documentation": {}
+    },
+    {
+        "label": "chunks",
+        "kind": 5,
+        "importPath": "CODERS OF BANGLORE.pepole_max_follow",
+        "description": "CODERS OF BANGLORE.pepole_max_follow",
+        "peekOfCode": "chunks = [c for c in chunks if len(c) > 3]\ndef parse_chunk(chunk):\n    chunk = chunk.strip()\n    sep_chunk = chunk.split('\\n')\n    username = sep_chunk[0]\n    no_of_posts = int(sep_chunk[1].split(\"post\")[0].replace(\",\", \"\").strip())\n    follower_str = sep_chunk[2].split(\"followers\")[0].replace(\",\", \"\").strip()\n    if \"K\" in sep_chunk[2]:\n        no_of_followers = int(float(follower_str.replace(\"K\", \"\")) * 1000)\n    elif \"M\" in sep_chunk[2]:",
+        "detail": "CODERS OF BANGLORE.pepole_max_follow",
+        "documentation": {}
+    },
+    {
+        "label": "all_chunks",
+        "kind": 5,
+        "importPath": "CODERS OF BANGLORE.pepole_max_follow",
+        "description": "CODERS OF BANGLORE.pepole_max_follow",
+        "peekOfCode": "all_chunks = []\nfor chunk in chunks:\n    parsed_chunk = parse_chunk(chunk)\n    all_chunks.append(parsed_chunk)\n'''max_followers = 0\nfor chunk in all_chunks:\n    if chunk['no_of_followers'] > max_followers:\n        max_followers = chunk['no_of_followers']\n        chunk_with_max_followers = chunk\npprint(chunk_with_max_followers)'''",
+        "detail": "CODERS OF BANGLORE.pepole_max_follow",
+        "documentation": {}
+    },
+    {
+        "label": "'''max_followers",
+        "kind": 5,
+        "importPath": "CODERS OF BANGLORE.pepole_max_follow",
+        "description": "CODERS OF BANGLORE.pepole_max_follow",
+        "peekOfCode": "'''max_followers = 0\nfor chunk in all_chunks:\n    if chunk['no_of_followers'] > max_followers:\n        max_followers = chunk['no_of_followers']\n        chunk_with_max_followers = chunk\npprint(chunk_with_max_followers)'''\n'''max_following = 0\nfor chunk in all_chunks:\n    if chunk['no_of_following'] > max_following:\n        max_followers = chunk['no_of_following']",
+        "detail": "CODERS OF BANGLORE.pepole_max_follow",
+        "documentation": {}
+    },
+    {
+        "label": "'''max_following",
+        "kind": 5,
+        "importPath": "CODERS OF BANGLORE.pepole_max_follow",
+        "description": "CODERS OF BANGLORE.pepole_max_follow",
+        "peekOfCode": "'''max_following = 0\nfor chunk in all_chunks:\n    if chunk['no_of_following'] > max_following:\n        max_followers = chunk['no_of_following']\n        chunk_with_max_following = chunk\npprint(chunk_with_max_following)'''\ncategories = set()\nfor chunk in all_chunks:\n    categories.add(chunk['type_of_page'])\npprint(categories)",
+        "detail": "CODERS OF BANGLORE.pepole_max_follow",
+        "documentation": {}
+    },
+    {
+        "label": "categories",
+        "kind": 5,
+        "importPath": "CODERS OF BANGLORE.pepole_max_follow",
+        "description": "CODERS OF BANGLORE.pepole_max_follow",
+        "peekOfCode": "categories = set()\nfor chunk in all_chunks:\n    categories.add(chunk['type_of_page'])\npprint(categories)\nprint(categories, len(categories))",
+        "detail": "CODERS OF BANGLORE.pepole_max_follow",
+        "documentation": {}
+    },
+    {
+        "label": "chunks",
+        "kind": 5,
+        "importPath": "CODERS OF BANGLORE.remove_chunk",
+        "description": "CODERS OF BANGLORE.remove_chunk",
+        "peekOfCode": "chunks = data.split(\"\\n\\n\")\nprint(chunks[1])",
+        "detail": "CODERS OF BANGLORE.remove_chunk",
+        "documentation": {}
+    },
+    {
+        "label": "clean_data",
+        "kind": 2,
+        "importPath": "CODERS OF DELHI.data_cleaning",
+        "description": "CODERS OF DELHI.data_cleaning",
+        "peekOfCode": "def clean_data(data):\n    data[\"users\"] = [user for user in data[\"users\"] if user[\"name\"].strip()]\n    for user in data[\"users\"]:\n        user['friends'] = list(set(user['friends']))\n    data['users'] = [user for user in data['users'] if user['friends'] or user['liked_pages']]\n    unique_pages = {}\n    for page in data['pages']:\n        unique_pages[page['id']] = page\n    data['pages'] = list(unique_pages.values())\n    return data",
+        "detail": "CODERS OF DELHI.data_cleaning",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "CODERS OF DELHI.data_cleaning",
+        "description": "CODERS OF DELHI.data_cleaning",
+        "peekOfCode": "data = json.load(open(\"data2.json\"))\ndata = clean_data(data)\njson.dump(data,open(\"cleaned_data2.json\",\"w\"), indent = 4)\nprint(\"Data has been cleaned successfully\")",
+        "detail": "CODERS OF DELHI.data_cleaning",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "CODERS OF DELHI.data_cleaning",
+        "description": "CODERS OF DELHI.data_cleaning",
+        "peekOfCode": "data = clean_data(data)\njson.dump(data,open(\"cleaned_data2.json\",\"w\"), indent = 4)\nprint(\"Data has been cleaned successfully\")",
+        "detail": "CODERS OF DELHI.data_cleaning",
+        "documentation": {}
+    },
+    {
+        "label": "load_data",
+        "kind": 2,
+        "importPath": "CODERS OF DELHI.internship1",
+        "description": "CODERS OF DELHI.internship1",
+        "peekOfCode": "def load_data(filename):\n    with open(filename, \"r\") as f:\n        data = json.load(f)\n        return data\ndata = load_data(\"data.json\")\n#print(data)\ndef display_user(data):\n    print(\"Users and their connections\\n\")\n    for user in data['users']:\n        print(f\"{user['name']} is friend with: {user['friends']} and liked pages are {user['liked_pages']}\")",
+        "detail": "CODERS OF DELHI.internship1",
+        "documentation": {}
+    },
+    {
+        "label": "display_user",
+        "kind": 2,
+        "importPath": "CODERS OF DELHI.internship1",
+        "description": "CODERS OF DELHI.internship1",
+        "peekOfCode": "def display_user(data):\n    print(\"Users and their connections\\n\")\n    for user in data['users']:\n        print(f\"{user['name']} is friend with: {user['friends']} and liked pages are {user['liked_pages']}\")\n    print(\"Pages Information\")\n    for page in data['pages']:\n        print(f\"{page['id']}: {page['name']}\")\ndisplay_user(data)",
+        "detail": "CODERS OF DELHI.internship1",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "CODERS OF DELHI.internship1",
+        "description": "CODERS OF DELHI.internship1",
+        "peekOfCode": "data = load_data(\"data.json\")\n#print(data)\ndef display_user(data):\n    print(\"Users and their connections\\n\")\n    for user in data['users']:\n        print(f\"{user['name']} is friend with: {user['friends']} and liked pages are {user['liked_pages']}\")\n    print(\"Pages Information\")\n    for page in data['pages']:\n        print(f\"{page['id']}: {page['name']}\")\ndisplay_user(data)",
+        "detail": "CODERS OF DELHI.internship1",
+        "documentation": {}
+    },
+    {
+        "label": "load_data",
+        "kind": 2,
+        "importPath": "CODERS OF DELHI.people_you_know",
+        "description": "CODERS OF DELHI.people_you_know",
+        "peekOfCode": "def load_data(filename):\n    with open(filename, \"r\") as f:\n        return json.load(f)\ndef find_people_you_may_know(user_id, data):\n    user_friends = {}\n    for user in data['users']:\n        user_friends[user['id']] = set(user['friends'])\n    if user_id not in user_friends:\n        return []\n    direct_friends = user_friends[user_id]",
+        "detail": "CODERS OF DELHI.people_you_know",
+        "documentation": {}
+    },
+    {
+        "label": "find_people_you_may_know",
+        "kind": 2,
+        "importPath": "CODERS OF DELHI.people_you_know",
+        "description": "CODERS OF DELHI.people_you_know",
+        "peekOfCode": "def find_people_you_may_know(user_id, data):\n    user_friends = {}\n    for user in data['users']:\n        user_friends[user['id']] = set(user['friends'])\n    if user_id not in user_friends:\n        return []\n    direct_friends = user_friends[user_id]\n    suggestions = {}\n    for friend in direct_friends:\n        for mutual in user_friends[friend]:",
+        "detail": "CODERS OF DELHI.people_you_know",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "CODERS OF DELHI.people_you_know",
+        "description": "CODERS OF DELHI.people_you_know",
+        "peekOfCode": "data = load_data(\"data.json\")\nuser_id = 1\nrecommendations = find_people_you_may_know(user_id, data)\nprint(recommendations)",
+        "detail": "CODERS OF DELHI.people_you_know",
+        "documentation": {}
+    },
+    {
+        "label": "user_id",
+        "kind": 5,
+        "importPath": "CODERS OF DELHI.people_you_know",
+        "description": "CODERS OF DELHI.people_you_know",
+        "peekOfCode": "user_id = 1\nrecommendations = find_people_you_may_know(user_id, data)\nprint(recommendations)",
+        "detail": "CODERS OF DELHI.people_you_know",
+        "documentation": {}
+    },
+    {
+        "label": "recommendations",
+        "kind": 5,
+        "importPath": "CODERS OF DELHI.people_you_know",
+        "description": "CODERS OF DELHI.people_you_know",
+        "peekOfCode": "recommendations = find_people_you_may_know(user_id, data)\nprint(recommendations)",
+        "detail": "CODERS OF DELHI.people_you_know",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "NUMPY.broadcasting",
+        "description": "NUMPY.broadcasting",
+        "peekOfCode": "arr = np.array([1,2,3,4,5,6])\nresult = arr ** 2\nprint(result)\n# this vectorization this is faster than looping condition\narr = np.array([1,2,3,4,5])\nresult = arr + 10\nprint(result)\narr1 = np.array([1, 2, 3])\narr2 = np.array([10, 20, 30])\nresult = arr1 + arr2",
+        "detail": "NUMPY.broadcasting",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "NUMPY.broadcasting",
+        "description": "NUMPY.broadcasting",
+        "peekOfCode": "result = arr ** 2\nprint(result)\n# this vectorization this is faster than looping condition\narr = np.array([1,2,3,4,5])\nresult = arr + 10\nprint(result)\narr1 = np.array([1, 2, 3])\narr2 = np.array([10, 20, 30])\nresult = arr1 + arr2\nprint(result)",
+        "detail": "NUMPY.broadcasting",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "NUMPY.broadcasting",
+        "description": "NUMPY.broadcasting",
+        "peekOfCode": "arr = np.array([1,2,3,4,5])\nresult = arr + 10\nprint(result)\narr1 = np.array([1, 2, 3])\narr2 = np.array([10, 20, 30])\nresult = arr1 + arr2\nprint(result)\narr1 = np.array([[1, 2, 3], [4, 5, 6]])\narr2 = np.array([1, 2, 3])\nresult = arr1 + arr2",
+        "detail": "NUMPY.broadcasting",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "NUMPY.broadcasting",
+        "description": "NUMPY.broadcasting",
+        "peekOfCode": "result = arr + 10\nprint(result)\narr1 = np.array([1, 2, 3])\narr2 = np.array([10, 20, 30])\nresult = arr1 + arr2\nprint(result)\narr1 = np.array([[1, 2, 3], [4, 5, 6]])\narr2 = np.array([1, 2, 3])\nresult = arr1 + arr2\nprint(result)",
+        "detail": "NUMPY.broadcasting",
+        "documentation": {}
+    },
+    {
+        "label": "arr1",
+        "kind": 5,
+        "importPath": "NUMPY.broadcasting",
+        "description": "NUMPY.broadcasting",
+        "peekOfCode": "arr1 = np.array([1, 2, 3])\narr2 = np.array([10, 20, 30])\nresult = arr1 + arr2\nprint(result)\narr1 = np.array([[1, 2, 3], [4, 5, 6]])\narr2 = np.array([1, 2, 3])\nresult = arr1 + arr2\nprint(result)\ndata = np.array([[10, 20, 30],\n                 [15, 25, 35],",
+        "detail": "NUMPY.broadcasting",
+        "documentation": {}
+    },
+    {
+        "label": "arr2",
+        "kind": 5,
+        "importPath": "NUMPY.broadcasting",
+        "description": "NUMPY.broadcasting",
+        "peekOfCode": "arr2 = np.array([10, 20, 30])\nresult = arr1 + arr2\nprint(result)\narr1 = np.array([[1, 2, 3], [4, 5, 6]])\narr2 = np.array([1, 2, 3])\nresult = arr1 + arr2\nprint(result)\ndata = np.array([[10, 20, 30],\n                 [15, 25, 35],\n                 [20, 30, 40],",
+        "detail": "NUMPY.broadcasting",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "NUMPY.broadcasting",
+        "description": "NUMPY.broadcasting",
+        "peekOfCode": "result = arr1 + arr2\nprint(result)\narr1 = np.array([[1, 2, 3], [4, 5, 6]])\narr2 = np.array([1, 2, 3])\nresult = arr1 + arr2\nprint(result)\ndata = np.array([[10, 20, 30],\n                 [15, 25, 35],\n                 [20, 30, 40],\n                 [25, 35, 45],",
+        "detail": "NUMPY.broadcasting",
+        "documentation": {}
+    },
+    {
+        "label": "arr1",
+        "kind": 5,
+        "importPath": "NUMPY.broadcasting",
+        "description": "NUMPY.broadcasting",
+        "peekOfCode": "arr1 = np.array([[1, 2, 3], [4, 5, 6]])\narr2 = np.array([1, 2, 3])\nresult = arr1 + arr2\nprint(result)\ndata = np.array([[10, 20, 30],\n                 [15, 25, 35],\n                 [20, 30, 40],\n                 [25, 35, 45],\n                 [30, 40, 50]])\nmean = data.mean(axis = 0)",
+        "detail": "NUMPY.broadcasting",
+        "documentation": {}
+    },
+    {
+        "label": "arr2",
+        "kind": 5,
+        "importPath": "NUMPY.broadcasting",
+        "description": "NUMPY.broadcasting",
+        "peekOfCode": "arr2 = np.array([1, 2, 3])\nresult = arr1 + arr2\nprint(result)\ndata = np.array([[10, 20, 30],\n                 [15, 25, 35],\n                 [20, 30, 40],\n                 [25, 35, 45],\n                 [30, 40, 50]])\nmean = data.mean(axis = 0)\nstd = data.std(axis = 0)",
+        "detail": "NUMPY.broadcasting",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "NUMPY.broadcasting",
+        "description": "NUMPY.broadcasting",
+        "peekOfCode": "result = arr1 + arr2\nprint(result)\ndata = np.array([[10, 20, 30],\n                 [15, 25, 35],\n                 [20, 30, 40],\n                 [25, 35, 45],\n                 [30, 40, 50]])\nmean = data.mean(axis = 0)\nstd = data.std(axis = 0)\nnormalized_data = (data - mean) / std",
+        "detail": "NUMPY.broadcasting",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "NUMPY.broadcasting",
+        "description": "NUMPY.broadcasting",
+        "peekOfCode": "data = np.array([[10, 20, 30],\n                 [15, 25, 35],\n                 [20, 30, 40],\n                 [25, 35, 45],\n                 [30, 40, 50]])\nmean = data.mean(axis = 0)\nstd = data.std(axis = 0)\nnormalized_data = (data - mean) / std\nprint(normalized_data)",
+        "detail": "NUMPY.broadcasting",
+        "documentation": {}
+    },
+    {
+        "label": "mean",
+        "kind": 5,
+        "importPath": "NUMPY.broadcasting",
+        "description": "NUMPY.broadcasting",
+        "peekOfCode": "mean = data.mean(axis = 0)\nstd = data.std(axis = 0)\nnormalized_data = (data - mean) / std\nprint(normalized_data)",
+        "detail": "NUMPY.broadcasting",
+        "documentation": {}
+    },
+    {
+        "label": "std",
+        "kind": 5,
+        "importPath": "NUMPY.broadcasting",
+        "description": "NUMPY.broadcasting",
+        "peekOfCode": "std = data.std(axis = 0)\nnormalized_data = (data - mean) / std\nprint(normalized_data)",
+        "detail": "NUMPY.broadcasting",
+        "documentation": {}
+    },
+    {
+        "label": "normalized_data",
+        "kind": 5,
+        "importPath": "NUMPY.broadcasting",
+        "description": "NUMPY.broadcasting",
+        "peekOfCode": "normalized_data = (data - mean) / std\nprint(normalized_data)",
+        "detail": "NUMPY.broadcasting",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "NUMPY.build_in_math_func",
+        "description": "NUMPY.build_in_math_func",
+        "peekOfCode": "arr = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])\nprint(np.mean(arr))\nprint(np.max(arr))\nprint(np.std(arr))\nprint(np.percentile(arr, 50) )\nprint(np.argmin(arr))\nprint(np.argmax(arr))\nprint(np.unique(arr))\nprint(np.cumsum(arr))\nprint(np.log(arr))",
+        "detail": "NUMPY.build_in_math_func",
+        "documentation": {}
+    },
+    {
+        "label": "list_data",
+        "kind": 5,
+        "importPath": "NUMPY.checking_efficiency",
+        "description": "NUMPY.checking_efficiency",
+        "peekOfCode": "list_data = list(range(1000))\nnumpy_data = np.array(list_data)\n# Size comparison\nprint(\"Python list size:\", sys.getsizeof(list_data) * len(list_data), \"bytes\")\nprint(\"NumPy array size:\", numpy_data.nbytes, \"bytes\")\n# Python list (loop-based)\nlist_squares = [x ** 2 for x in list_data]\n# NumPy (vectorized)\nnumpy_squares = numpy_data ** 2\nprint(\"List squares (first 5):\", list_squares[:5])",
+        "detail": "NUMPY.checking_efficiency",
+        "documentation": {}
+    },
+    {
+        "label": "numpy_data",
+        "kind": 5,
+        "importPath": "NUMPY.checking_efficiency",
+        "description": "NUMPY.checking_efficiency",
+        "peekOfCode": "numpy_data = np.array(list_data)\n# Size comparison\nprint(\"Python list size:\", sys.getsizeof(list_data) * len(list_data), \"bytes\")\nprint(\"NumPy array size:\", numpy_data.nbytes, \"bytes\")\n# Python list (loop-based)\nlist_squares = [x ** 2 for x in list_data]\n# NumPy (vectorized)\nnumpy_squares = numpy_data ** 2\nprint(\"List squares (first 5):\", list_squares[:5])\nprint(\"NumPy squares (first 5):\", numpy_squares[:5])",
+        "detail": "NUMPY.checking_efficiency",
+        "documentation": {}
+    },
+    {
+        "label": "list_squares",
+        "kind": 5,
+        "importPath": "NUMPY.checking_efficiency",
+        "description": "NUMPY.checking_efficiency",
+        "peekOfCode": "list_squares = [x ** 2 for x in list_data]\n# NumPy (vectorized)\nnumpy_squares = numpy_data ** 2\nprint(\"List squares (first 5):\", list_squares[:5])\nprint(\"NumPy squares (first 5):\", numpy_squares[:5])",
+        "detail": "NUMPY.checking_efficiency",
+        "documentation": {}
+    },
+    {
+        "label": "numpy_squares",
+        "kind": 5,
+        "importPath": "NUMPY.checking_efficiency",
+        "description": "NUMPY.checking_efficiency",
+        "peekOfCode": "numpy_squares = numpy_data ** 2\nprint(\"List squares (first 5):\", list_squares[:5])\nprint(\"NumPy squares (first 5):\", numpy_squares[:5])",
+        "detail": "NUMPY.checking_efficiency",
+        "documentation": {}
+    },
+    {
+        "label": "arr1",
+        "kind": 5,
+        "importPath": "NUMPY.creating_array",
+        "description": "NUMPY.creating_array",
+        "peekOfCode": "arr1 = np.array([1, 2, 3, 4, 5])\nprint(arr1)\n# Creating a 2D NumPy array\narr2 = np.array([[1, 2, 3], [4, 5, 6]])\nprint(arr2)\n# Checking type and shape\nprint(\"Type:\", type(arr1))\nprint(\"Shape:\", arr2.shape)\nprint(np.zeros((3, 4)))\nprint(np.ones((3, 5)))",
+        "detail": "NUMPY.creating_array",
+        "documentation": {}
+    },
+    {
+        "label": "arr2",
+        "kind": 5,
+        "importPath": "NUMPY.creating_array",
+        "description": "NUMPY.creating_array",
+        "peekOfCode": "arr2 = np.array([[1, 2, 3], [4, 5, 6]])\nprint(arr2)\n# Checking type and shape\nprint(\"Type:\", type(arr1))\nprint(\"Shape:\", arr2.shape)\nprint(np.zeros((3, 4)))\nprint(np.ones((3, 5)))\nprint(np.full((4, 6), 8))\nprint(np.arange(1, 100, 2))\nprint(np.linspace(0, 1, 5))",
+        "detail": "NUMPY.creating_array",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "NUMPY.creating_array",
+        "description": "NUMPY.creating_array",
+        "peekOfCode": "arr = np.array([[10, 20, 30], [40, 50, 60]])\nprint(\"Shape:\", arr.shape)\nprint(\"Size:\", arr.size)\nprint(\"Dimensions:\", arr.ndim)\nprint(\"Data type:\", arr.dtype)\nmyarr = np.array([[10, 20, 30], [40, 50, 60], [70, 80, 90], [110, 120, 130]])\nprint(myarr)\nprint(\"Shape:\", myarr.shape)\nprint(\"Size:\", myarr.size)\nprint(\"Dimensions:\", myarr.ndim)",
+        "detail": "NUMPY.creating_array",
+        "documentation": {}
+    },
+    {
+        "label": "myarr",
+        "kind": 5,
+        "importPath": "NUMPY.creating_array",
+        "description": "NUMPY.creating_array",
+        "peekOfCode": "myarr = np.array([[10, 20, 30], [40, 50, 60], [70, 80, 90], [110, 120, 130]])\nprint(myarr)\nprint(\"Shape:\", myarr.shape)\nprint(\"Size:\", myarr.size)\nprint(\"Dimensions:\", myarr.ndim)\nprint(\"Data type:\", myarr.dtype)\nmyarr = np.array([[10, 20, 30], [40, 50, 60], [70, 80, 90], [110, 120, 130]], dtype = 'float64')\nprint(myarr)\narr = np.array([[1, 2, 3], [4, 5, 6]])\nprint(arr.shape)",
+        "detail": "NUMPY.creating_array",
+        "documentation": {}
+    },
+    {
+        "label": "myarr",
+        "kind": 5,
+        "importPath": "NUMPY.creating_array",
+        "description": "NUMPY.creating_array",
+        "peekOfCode": "myarr = np.array([[10, 20, 30], [40, 50, 60], [70, 80, 90], [110, 120, 130]], dtype = 'float64')\nprint(myarr)\narr = np.array([[1, 2, 3], [4, 5, 6]])\nprint(arr.shape)\nreshaped = arr.reshape((3, 2))\nprint(reshaped)\nflattened = arr.flatten()  # Convert 2D → 1D\nprint(flattened)  # [1 2 3 4 5 6]",
+        "detail": "NUMPY.creating_array",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "NUMPY.creating_array",
+        "description": "NUMPY.creating_array",
+        "peekOfCode": "arr = np.array([[1, 2, 3], [4, 5, 6]])\nprint(arr.shape)\nreshaped = arr.reshape((3, 2))\nprint(reshaped)\nflattened = arr.flatten()  # Convert 2D → 1D\nprint(flattened)  # [1 2 3 4 5 6]",
+        "detail": "NUMPY.creating_array",
+        "documentation": {}
+    },
+    {
+        "label": "reshaped",
+        "kind": 5,
+        "importPath": "NUMPY.creating_array",
+        "description": "NUMPY.creating_array",
+        "peekOfCode": "reshaped = arr.reshape((3, 2))\nprint(reshaped)\nflattened = arr.flatten()  # Convert 2D → 1D\nprint(flattened)  # [1 2 3 4 5 6]",
+        "detail": "NUMPY.creating_array",
+        "documentation": {}
+    },
+    {
+        "label": "flattened",
+        "kind": 5,
+        "importPath": "NUMPY.creating_array",
+        "description": "NUMPY.creating_array",
+        "peekOfCode": "flattened = arr.flatten()  # Convert 2D → 1D\nprint(flattened)  # [1 2 3 4 5 6]",
+        "detail": "NUMPY.creating_array",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "NUMPY.creating_slicing_array",
+        "description": "NUMPY.creating_slicing_array",
+        "peekOfCode": "arr = np.array([[10, 20, 30],\n                [40, 50, 60],\n                [70, 80, 90],\n                [110, 120, 130]])\nflat = arr.flatten()\nprint(flat[0])\nprint(flat[3:6])\nprint(flat[3:])\nprint(flat[3:13])\narr = np.array([10, 20, 30, 40, 50])",
+        "detail": "NUMPY.creating_slicing_array",
+        "documentation": {}
+    },
+    {
+        "label": "flat",
+        "kind": 5,
+        "importPath": "NUMPY.creating_slicing_array",
+        "description": "NUMPY.creating_slicing_array",
+        "peekOfCode": "flat = arr.flatten()\nprint(flat[0])\nprint(flat[3:6])\nprint(flat[3:])\nprint(flat[3:13])\narr = np.array([10, 20, 30, 40, 50])\nidx = [0, 2, 4]\nprint(arr[idx])\narr = np.array([10, 20, 30, 40, 50])\nmask = arr > 25  # Condition: values greater than 25",
+        "detail": "NUMPY.creating_slicing_array",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "NUMPY.creating_slicing_array",
+        "description": "NUMPY.creating_slicing_array",
+        "peekOfCode": "arr = np.array([10, 20, 30, 40, 50])\nidx = [0, 2, 4]\nprint(arr[idx])\narr = np.array([10, 20, 30, 40, 50])\nmask = arr > 25  # Condition: values greater than 25\nprint(arr[mask])  # [30 40 50]\nsliced = arr[1:4]\nsliced[0] = 999\nprint(arr)",
+        "detail": "NUMPY.creating_slicing_array",
+        "documentation": {}
+    },
+    {
+        "label": "idx",
+        "kind": 5,
+        "importPath": "NUMPY.creating_slicing_array",
+        "description": "NUMPY.creating_slicing_array",
+        "peekOfCode": "idx = [0, 2, 4]\nprint(arr[idx])\narr = np.array([10, 20, 30, 40, 50])\nmask = arr > 25  # Condition: values greater than 25\nprint(arr[mask])  # [30 40 50]\nsliced = arr[1:4]\nsliced[0] = 999\nprint(arr)",
+        "detail": "NUMPY.creating_slicing_array",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "NUMPY.creating_slicing_array",
+        "description": "NUMPY.creating_slicing_array",
+        "peekOfCode": "arr = np.array([10, 20, 30, 40, 50])\nmask = arr > 25  # Condition: values greater than 25\nprint(arr[mask])  # [30 40 50]\nsliced = arr[1:4]\nsliced[0] = 999\nprint(arr)",
+        "detail": "NUMPY.creating_slicing_array",
+        "documentation": {}
+    },
+    {
+        "label": "mask",
+        "kind": 5,
+        "importPath": "NUMPY.creating_slicing_array",
+        "description": "NUMPY.creating_slicing_array",
+        "peekOfCode": "mask = arr > 25  # Condition: values greater than 25\nprint(arr[mask])  # [30 40 50]\nsliced = arr[1:4]\nsliced[0] = 999\nprint(arr)",
+        "detail": "NUMPY.creating_slicing_array",
+        "documentation": {}
+    },
+    {
+        "label": "sliced",
+        "kind": 5,
+        "importPath": "NUMPY.creating_slicing_array",
+        "description": "NUMPY.creating_slicing_array",
+        "peekOfCode": "sliced = arr[1:4]\nsliced[0] = 999\nprint(arr)",
+        "detail": "NUMPY.creating_slicing_array",
+        "documentation": {}
+    },
+    {
+        "label": "sliced[0]",
+        "kind": 5,
+        "importPath": "NUMPY.creating_slicing_array",
+        "description": "NUMPY.creating_slicing_array",
+        "peekOfCode": "sliced[0] = 999\nprint(arr)",
+        "detail": "NUMPY.creating_slicing_array",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "NUMPY.Multidimensional_Indexing_Axis",
+        "description": "NUMPY.Multidimensional_Indexing_Axis",
+        "peekOfCode": "arr = np.array([[1,2,3],\n[4,5,6],\n[7,8,9]])\nnp.sum(arr,axis = 1)\nprint(arr[0][1])\nprint(np.sum(arr, axis=0))\nprint(np.sum(arr, axis=1))\n# Accessing an element\nprint(arr[1, 2])\nprint(arr[0:2, 1:3])",
+        "detail": "NUMPY.Multidimensional_Indexing_Axis",
+        "documentation": {}
+    },
+    {
+        "label": "np.sum(arr,axis",
+        "kind": 5,
+        "importPath": "NUMPY.Multidimensional_Indexing_Axis",
+        "description": "NUMPY.Multidimensional_Indexing_Axis",
+        "peekOfCode": "np.sum(arr,axis = 1)\nprint(arr[0][1])\nprint(np.sum(arr, axis=0))\nprint(np.sum(arr, axis=1))\n# Accessing an element\nprint(arr[1, 2])\nprint(arr[0:2, 1:3])\narr3D = np.array([[[1, 2, 3], [4, 5, 6]],\n                  [[7, 8, 9], [10, 11, 12]]])\nprint(arr3D.shape)",
+        "detail": "NUMPY.Multidimensional_Indexing_Axis",
+        "documentation": {}
+    },
+    {
+        "label": "arr3D",
+        "kind": 5,
+        "importPath": "NUMPY.Multidimensional_Indexing_Axis",
+        "description": "NUMPY.Multidimensional_Indexing_Axis",
+        "peekOfCode": "arr3D = np.array([[[1, 2, 3], [4, 5, 6]],\n                  [[7, 8, 9], [10, 11, 12]]])\nprint(arr3D.shape)\nprint(arr3D[:,0,:])\nfirst_col = arr[:,0]\nprint(first_col)\narr[:,1] = 0\nprint(arr3D)",
+        "detail": "NUMPY.Multidimensional_Indexing_Axis",
+        "documentation": {}
+    },
+    {
+        "label": "first_col",
+        "kind": 5,
+        "importPath": "NUMPY.Multidimensional_Indexing_Axis",
+        "description": "NUMPY.Multidimensional_Indexing_Axis",
+        "peekOfCode": "first_col = arr[:,0]\nprint(first_col)\narr[:,1] = 0\nprint(arr3D)",
+        "detail": "NUMPY.Multidimensional_Indexing_Axis",
+        "documentation": {}
+    },
+    {
+        "label": "arr[:,1]",
+        "kind": 5,
+        "importPath": "NUMPY.Multidimensional_Indexing_Axis",
+        "description": "NUMPY.Multidimensional_Indexing_Axis",
+        "peekOfCode": "arr[:,1] = 0\nprint(arr3D)",
+        "detail": "NUMPY.Multidimensional_Indexing_Axis",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "NUMPY.numpy_datatype",
+        "description": "NUMPY.numpy_datatype",
+        "peekOfCode": "arr = np.array([1, 2, 3, 4, 5])\nprint(arr.dtype)\narr = np.array([1.5, 2.7, 3.9])\nprint(arr.dtype)\narr_int = arr.astype(np.int32)\nprint(arr_int)\nprint(arr.dtype)\narr_float = arr.astype(np.float32)\nprint(arr_float)\narr_large = np.array([100000, 2000000, 3000000],",
+        "detail": "NUMPY.numpy_datatype",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "NUMPY.numpy_datatype",
+        "description": "NUMPY.numpy_datatype",
+        "peekOfCode": "arr = np.array([1.5, 2.7, 3.9])\nprint(arr.dtype)\narr_int = arr.astype(np.int32)\nprint(arr_int)\nprint(arr.dtype)\narr_float = arr.astype(np.float32)\nprint(arr_float)\narr_large = np.array([100000, 2000000, 3000000],\ndtype = np.int64)\narr_small = arr_large.astype(np.int32)",
+        "detail": "NUMPY.numpy_datatype",
+        "documentation": {}
+    },
+    {
+        "label": "arr_int",
+        "kind": 5,
+        "importPath": "NUMPY.numpy_datatype",
+        "description": "NUMPY.numpy_datatype",
+        "peekOfCode": "arr_int = arr.astype(np.int32)\nprint(arr_int)\nprint(arr.dtype)\narr_float = arr.astype(np.float32)\nprint(arr_float)\narr_large = np.array([100000, 2000000, 3000000],\ndtype = np.int64)\narr_small = arr_large.astype(np.int32)\nprint(arr_small)\nprint(arr_small.dtype)",
+        "detail": "NUMPY.numpy_datatype",
+        "documentation": {}
+    },
+    {
+        "label": "arr_float",
+        "kind": 5,
+        "importPath": "NUMPY.numpy_datatype",
+        "description": "NUMPY.numpy_datatype",
+        "peekOfCode": "arr_float = arr.astype(np.float32)\nprint(arr_float)\narr_large = np.array([100000, 2000000, 3000000],\ndtype = np.int64)\narr_small = arr_large.astype(np.int32)\nprint(arr_small)\nprint(arr_small.dtype)\narr_int64 = np.array([1, 2, 3], dtype=np.int64)\narr_int32 = np.array([1, 2, 3], dtype=np.int32)\nprint(arr_int64.nbytes)",
+        "detail": "NUMPY.numpy_datatype",
+        "documentation": {}
+    },
+    {
+        "label": "arr_large",
+        "kind": 5,
+        "importPath": "NUMPY.numpy_datatype",
+        "description": "NUMPY.numpy_datatype",
+        "peekOfCode": "arr_large = np.array([100000, 2000000, 3000000],\ndtype = np.int64)\narr_small = arr_large.astype(np.int32)\nprint(arr_small)\nprint(arr_small.dtype)\narr_int64 = np.array([1, 2, 3], dtype=np.int64)\narr_int32 = np.array([1, 2, 3], dtype=np.int32)\nprint(arr_int64.nbytes)\nprint(arr_int32.nbytes)\narr = np.array(['apple', 'banana', 'cherry'], dtype='U10')  # Unicode string array",
+        "detail": "NUMPY.numpy_datatype",
+        "documentation": {}
+    },
+    {
+        "label": "dtype",
+        "kind": 5,
+        "importPath": "NUMPY.numpy_datatype",
+        "description": "NUMPY.numpy_datatype",
+        "peekOfCode": "dtype = np.int64)\narr_small = arr_large.astype(np.int32)\nprint(arr_small)\nprint(arr_small.dtype)\narr_int64 = np.array([1, 2, 3], dtype=np.int64)\narr_int32 = np.array([1, 2, 3], dtype=np.int32)\nprint(arr_int64.nbytes)\nprint(arr_int32.nbytes)\narr = np.array(['apple', 'banana', 'cherry'], dtype='U10')  # Unicode string array\nprint(arr)",
+        "detail": "NUMPY.numpy_datatype",
+        "documentation": {}
+    },
+    {
+        "label": "arr_small",
+        "kind": 5,
+        "importPath": "NUMPY.numpy_datatype",
+        "description": "NUMPY.numpy_datatype",
+        "peekOfCode": "arr_small = arr_large.astype(np.int32)\nprint(arr_small)\nprint(arr_small.dtype)\narr_int64 = np.array([1, 2, 3], dtype=np.int64)\narr_int32 = np.array([1, 2, 3], dtype=np.int32)\nprint(arr_int64.nbytes)\nprint(arr_int32.nbytes)\narr = np.array(['apple', 'banana', 'cherry'], dtype='U10')  # Unicode string array\nprint(arr)\narr = np.array([1 + 2j, 3 + 4j, 5 + 6j], dtype='complex128')",
+        "detail": "NUMPY.numpy_datatype",
+        "documentation": {}
+    },
+    {
+        "label": "arr_int64",
+        "kind": 5,
+        "importPath": "NUMPY.numpy_datatype",
+        "description": "NUMPY.numpy_datatype",
+        "peekOfCode": "arr_int64 = np.array([1, 2, 3], dtype=np.int64)\narr_int32 = np.array([1, 2, 3], dtype=np.int32)\nprint(arr_int64.nbytes)\nprint(arr_int32.nbytes)\narr = np.array(['apple', 'banana', 'cherry'], dtype='U10')  # Unicode string array\nprint(arr)\narr = np.array([1 + 2j, 3 + 4j, 5 + 6j], dtype='complex128')\nprint(arr)\narr = np.array([{'a': 1}, [1, 2, 3], 'hello'], dtype=object)\nprint(arr)",
+        "detail": "NUMPY.numpy_datatype",
+        "documentation": {}
+    },
+    {
+        "label": "arr_int32",
+        "kind": 5,
+        "importPath": "NUMPY.numpy_datatype",
+        "description": "NUMPY.numpy_datatype",
+        "peekOfCode": "arr_int32 = np.array([1, 2, 3], dtype=np.int32)\nprint(arr_int64.nbytes)\nprint(arr_int32.nbytes)\narr = np.array(['apple', 'banana', 'cherry'], dtype='U10')  # Unicode string array\nprint(arr)\narr = np.array([1 + 2j, 3 + 4j, 5 + 6j], dtype='complex128')\nprint(arr)\narr = np.array([{'a': 1}, [1, 2, 3], 'hello'], dtype=object)\nprint(arr)",
+        "detail": "NUMPY.numpy_datatype",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "NUMPY.numpy_datatype",
+        "description": "NUMPY.numpy_datatype",
+        "peekOfCode": "arr = np.array(['apple', 'banana', 'cherry'], dtype='U10')  # Unicode string array\nprint(arr)\narr = np.array([1 + 2j, 3 + 4j, 5 + 6j], dtype='complex128')\nprint(arr)\narr = np.array([{'a': 1}, [1, 2, 3], 'hello'], dtype=object)\nprint(arr)",
+        "detail": "NUMPY.numpy_datatype",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "NUMPY.numpy_datatype",
+        "description": "NUMPY.numpy_datatype",
+        "peekOfCode": "arr = np.array([1 + 2j, 3 + 4j, 5 + 6j], dtype='complex128')\nprint(arr)\narr = np.array([{'a': 1}, [1, 2, 3], 'hello'], dtype=object)\nprint(arr)",
+        "detail": "NUMPY.numpy_datatype",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "NUMPY.numpy_datatype",
+        "description": "NUMPY.numpy_datatype",
+        "peekOfCode": "arr = np.array([{'a': 1}, [1, 2, 3], 'hello'], dtype=object)\nprint(arr)",
+        "detail": "NUMPY.numpy_datatype",
+        "documentation": {}
+    },
+    {
+        "label": "size",
+        "kind": 5,
+        "importPath": "NUMPY.speed",
+        "description": "NUMPY.speed",
+        "peekOfCode": "size = 1_000_000\n# NumPy approach (fast)\nstart = time.time()\nl1 = np.array(list(range(size)))\nl2 = np.array(list(range(size)))\nadd = l1 + l2\nend = time.time()\nprint(\"NumPy time:\", end - start)\n# Python list approach (for comparison)\nstart = time.time()",
+        "detail": "NUMPY.speed",
+        "documentation": {}
+    },
+    {
+        "label": "start",
+        "kind": 5,
+        "importPath": "NUMPY.speed",
+        "description": "NUMPY.speed",
+        "peekOfCode": "start = time.time()\nl1 = np.array(list(range(size)))\nl2 = np.array(list(range(size)))\nadd = l1 + l2\nend = time.time()\nprint(\"NumPy time:\", end - start)\n# Python list approach (for comparison)\nstart = time.time()\nl1 = list(range(size))\nl2 = list(range(size))",
+        "detail": "NUMPY.speed",
+        "documentation": {}
+    },
+    {
+        "label": "l1",
+        "kind": 5,
+        "importPath": "NUMPY.speed",
+        "description": "NUMPY.speed",
+        "peekOfCode": "l1 = np.array(list(range(size)))\nl2 = np.array(list(range(size)))\nadd = l1 + l2\nend = time.time()\nprint(\"NumPy time:\", end - start)\n# Python list approach (for comparison)\nstart = time.time()\nl1 = list(range(size))\nl2 = list(range(size))\nadd = [x + y for x, y in zip(l1, l2)]",
+        "detail": "NUMPY.speed",
+        "documentation": {}
+    },
+    {
+        "label": "l2",
+        "kind": 5,
+        "importPath": "NUMPY.speed",
+        "description": "NUMPY.speed",
+        "peekOfCode": "l2 = np.array(list(range(size)))\nadd = l1 + l2\nend = time.time()\nprint(\"NumPy time:\", end - start)\n# Python list approach (for comparison)\nstart = time.time()\nl1 = list(range(size))\nl2 = list(range(size))\nadd = [x + y for x, y in zip(l1, l2)]\nend = time.time()",
+        "detail": "NUMPY.speed",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 5,
+        "importPath": "NUMPY.speed",
+        "description": "NUMPY.speed",
+        "peekOfCode": "add = l1 + l2\nend = time.time()\nprint(\"NumPy time:\", end - start)\n# Python list approach (for comparison)\nstart = time.time()\nl1 = list(range(size))\nl2 = list(range(size))\nadd = [x + y for x, y in zip(l1, l2)]\nend = time.time()\nprint(\"List time:\", end - start)'''",
+        "detail": "NUMPY.speed",
+        "documentation": {}
+    },
+    {
+        "label": "end",
+        "kind": 5,
+        "importPath": "NUMPY.speed",
+        "description": "NUMPY.speed",
+        "peekOfCode": "end = time.time()\nprint(\"NumPy time:\", end - start)\n# Python list approach (for comparison)\nstart = time.time()\nl1 = list(range(size))\nl2 = list(range(size))\nadd = [x + y for x, y in zip(l1, l2)]\nend = time.time()\nprint(\"List time:\", end - start)'''\nimport numpy as np",
+        "detail": "NUMPY.speed",
+        "documentation": {}
+    },
+    {
+        "label": "start",
+        "kind": 5,
+        "importPath": "NUMPY.speed",
+        "description": "NUMPY.speed",
+        "peekOfCode": "start = time.time()\nl1 = list(range(size))\nl2 = list(range(size))\nadd = [x + y for x, y in zip(l1, l2)]\nend = time.time()\nprint(\"List time:\", end - start)'''\nimport numpy as np\nimport time\nsize = 1_000_000\n# Create data BEFORE timing",
+        "detail": "NUMPY.speed",
+        "documentation": {}
+    },
+    {
+        "label": "l1",
+        "kind": 5,
+        "importPath": "NUMPY.speed",
+        "description": "NUMPY.speed",
+        "peekOfCode": "l1 = list(range(size))\nl2 = list(range(size))\nadd = [x + y for x, y in zip(l1, l2)]\nend = time.time()\nprint(\"List time:\", end - start)'''\nimport numpy as np\nimport time\nsize = 1_000_000\n# Create data BEFORE timing\nl1_list = list(range(size))",
+        "detail": "NUMPY.speed",
+        "documentation": {}
+    },
+    {
+        "label": "l2",
+        "kind": 5,
+        "importPath": "NUMPY.speed",
+        "description": "NUMPY.speed",
+        "peekOfCode": "l2 = list(range(size))\nadd = [x + y for x, y in zip(l1, l2)]\nend = time.time()\nprint(\"List time:\", end - start)'''\nimport numpy as np\nimport time\nsize = 1_000_000\n# Create data BEFORE timing\nl1_list = list(range(size))\nl2_list = list(range(size))",
+        "detail": "NUMPY.speed",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 5,
+        "importPath": "NUMPY.speed",
+        "description": "NUMPY.speed",
+        "peekOfCode": "add = [x + y for x, y in zip(l1, l2)]\nend = time.time()\nprint(\"List time:\", end - start)'''\nimport numpy as np\nimport time\nsize = 1_000_000\n# Create data BEFORE timing\nl1_list = list(range(size))\nl2_list = list(range(size))\nl1_np = np.array(l1_list)",
+        "detail": "NUMPY.speed",
+        "documentation": {}
+    },
+    {
+        "label": "end",
+        "kind": 5,
+        "importPath": "NUMPY.speed",
+        "description": "NUMPY.speed",
+        "peekOfCode": "end = time.time()\nprint(\"List time:\", end - start)'''\nimport numpy as np\nimport time\nsize = 1_000_000\n# Create data BEFORE timing\nl1_list = list(range(size))\nl2_list = list(range(size))\nl1_np = np.array(l1_list)\nl2_np = np.array(l2_list)",
+        "detail": "NUMPY.speed",
+        "documentation": {}
+    },
+    {
+        "label": "size",
+        "kind": 5,
+        "importPath": "NUMPY.speed",
+        "description": "NUMPY.speed",
+        "peekOfCode": "size = 1_000_000\n# Create data BEFORE timing\nl1_list = list(range(size))\nl2_list = list(range(size))\nl1_np = np.array(l1_list)\nl2_np = np.array(l2_list)\n# Time NumPy (addition only)\nstart = time.time()\nadd = l1_np + l2_np\nend = time.time()",
+        "detail": "NUMPY.speed",
+        "documentation": {}
+    },
+    {
+        "label": "l1_list",
+        "kind": 5,
+        "importPath": "NUMPY.speed",
+        "description": "NUMPY.speed",
+        "peekOfCode": "l1_list = list(range(size))\nl2_list = list(range(size))\nl1_np = np.array(l1_list)\nl2_np = np.array(l2_list)\n# Time NumPy (addition only)\nstart = time.time()\nadd = l1_np + l2_np\nend = time.time()\nprint(\"NumPy time:\", end - start)\n# Time List (addition only)",
+        "detail": "NUMPY.speed",
+        "documentation": {}
+    },
+    {
+        "label": "l2_list",
+        "kind": 5,
+        "importPath": "NUMPY.speed",
+        "description": "NUMPY.speed",
+        "peekOfCode": "l2_list = list(range(size))\nl1_np = np.array(l1_list)\nl2_np = np.array(l2_list)\n# Time NumPy (addition only)\nstart = time.time()\nadd = l1_np + l2_np\nend = time.time()\nprint(\"NumPy time:\", end - start)\n# Time List (addition only)\nstart = time.time()",
+        "detail": "NUMPY.speed",
+        "documentation": {}
+    },
+    {
+        "label": "l1_np",
+        "kind": 5,
+        "importPath": "NUMPY.speed",
+        "description": "NUMPY.speed",
+        "peekOfCode": "l1_np = np.array(l1_list)\nl2_np = np.array(l2_list)\n# Time NumPy (addition only)\nstart = time.time()\nadd = l1_np + l2_np\nend = time.time()\nprint(\"NumPy time:\", end - start)\n# Time List (addition only)\nstart = time.time()\nadd = [x + y for x, y in zip(l1_list, l2_list)]",
+        "detail": "NUMPY.speed",
+        "documentation": {}
+    },
+    {
+        "label": "l2_np",
+        "kind": 5,
+        "importPath": "NUMPY.speed",
+        "description": "NUMPY.speed",
+        "peekOfCode": "l2_np = np.array(l2_list)\n# Time NumPy (addition only)\nstart = time.time()\nadd = l1_np + l2_np\nend = time.time()\nprint(\"NumPy time:\", end - start)\n# Time List (addition only)\nstart = time.time()\nadd = [x + y for x, y in zip(l1_list, l2_list)]\nend = time.time()",
+        "detail": "NUMPY.speed",
+        "documentation": {}
+    },
+    {
+        "label": "start",
+        "kind": 5,
+        "importPath": "NUMPY.speed",
+        "description": "NUMPY.speed",
+        "peekOfCode": "start = time.time()\nadd = l1_np + l2_np\nend = time.time()\nprint(\"NumPy time:\", end - start)\n# Time List (addition only)\nstart = time.time()\nadd = [x + y for x, y in zip(l1_list, l2_list)]\nend = time.time()\nprint(\"List time:\", end - start)",
+        "detail": "NUMPY.speed",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 5,
+        "importPath": "NUMPY.speed",
+        "description": "NUMPY.speed",
+        "peekOfCode": "add = l1_np + l2_np\nend = time.time()\nprint(\"NumPy time:\", end - start)\n# Time List (addition only)\nstart = time.time()\nadd = [x + y for x, y in zip(l1_list, l2_list)]\nend = time.time()\nprint(\"List time:\", end - start)",
+        "detail": "NUMPY.speed",
+        "documentation": {}
+    },
+    {
+        "label": "end",
+        "kind": 5,
+        "importPath": "NUMPY.speed",
+        "description": "NUMPY.speed",
+        "peekOfCode": "end = time.time()\nprint(\"NumPy time:\", end - start)\n# Time List (addition only)\nstart = time.time()\nadd = [x + y for x, y in zip(l1_list, l2_list)]\nend = time.time()\nprint(\"List time:\", end - start)",
+        "detail": "NUMPY.speed",
+        "documentation": {}
+    },
+    {
+        "label": "start",
+        "kind": 5,
+        "importPath": "NUMPY.speed",
+        "description": "NUMPY.speed",
+        "peekOfCode": "start = time.time()\nadd = [x + y for x, y in zip(l1_list, l2_list)]\nend = time.time()\nprint(\"List time:\", end - start)",
+        "detail": "NUMPY.speed",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 5,
+        "importPath": "NUMPY.speed",
+        "description": "NUMPY.speed",
+        "peekOfCode": "add = [x + y for x, y in zip(l1_list, l2_list)]\nend = time.time()\nprint(\"List time:\", end - start)",
+        "detail": "NUMPY.speed",
+        "documentation": {}
+    },
+    {
+        "label": "end",
+        "kind": 5,
+        "importPath": "NUMPY.speed",
+        "description": "NUMPY.speed",
+        "peekOfCode": "end = time.time()\nprint(\"List time:\", end - start)",
+        "detail": "NUMPY.speed",
+        "documentation": {}
+    },
+    {
+        "label": "s1",
+        "kind": 5,
+        "importPath": "PANDAS.aatif_code",
+        "description": "PANDAS.aatif_code",
+        "peekOfCode": "s1 = pd.Series([1,2,3,4,5,6])\nprint(s1)",
+        "detail": "PANDAS.aatif_code",
+        "documentation": {}
+    },
+    {
+        "label": "s1",
+        "kind": 5,
+        "importPath": "PANDAS.my_code",
+        "description": "PANDAS.my_code",
+        "peekOfCode": "s1 = pd.Series([71, 84, 56, 23, 56, 98, 56])\nprint(type(s1))\nprint(s1)\ns2 = pd.Series([71, 84, 56, 23, 56, 98, 56], index=[\"Aatif\", \"Ali\", \"Ahmed\", \"Ayesha\", \"Zainab\", \"Hassan\", \"Hina\"])\nprint(s2)",
+        "detail": "PANDAS.my_code",
+        "documentation": {}
+    },
+    {
+        "label": "s2",
+        "kind": 5,
+        "importPath": "PANDAS.my_code",
+        "description": "PANDAS.my_code",
+        "peekOfCode": "s2 = pd.Series([71, 84, 56, 23, 56, 98, 56], index=[\"Aatif\", \"Ali\", \"Ahmed\", \"Ayesha\", \"Zainab\", \"Hassan\", \"Hina\"])\nprint(s2)",
+        "detail": "PANDAS.my_code",
+        "documentation": {}
+    },
+    {
+        "label": "'''empty_dict",
+        "kind": 5,
+        "importPath": "dict",
+        "description": "dict",
+        "peekOfCode": "'''empty_dict = {}\n# Dictionary with key-value pairs\nstudent = {\n    \"name\": \"Alice\",\n    \"age\": 25,\n    \"grade\": \"A\"\n}\n# Using dict() constructor\nperson = dict(name=\"John\", age=30, city=\"New York\")\nprint(person)'''",
+        "detail": "dict",
+        "documentation": {}
+    },
+    {
+        "label": "student",
+        "kind": 5,
+        "importPath": "dict",
+        "description": "dict",
+        "peekOfCode": "student = {\n    \"name\": \"Alice\",\n    \"age\": 25,\n    \"grade\": \"A\"\n}\n# Using dict() constructor\nperson = dict(name=\"John\", age=30, city=\"New York\")\nprint(person)'''\nstudent = {\"name\": \"Alice\", \"age\": 25, \"grade\": \"A\"}\n# Adding a new key-value pair",
+        "detail": "dict",
+        "documentation": {}
+    },
+    {
+        "label": "person",
+        "kind": 5,
+        "importPath": "dict",
+        "description": "dict",
+        "peekOfCode": "person = dict(name=\"John\", age=30, city=\"New York\")\nprint(person)'''\nstudent = {\"name\": \"Alice\", \"age\": 25, \"grade\": \"A\"}\n# Adding a new key-value pair\nstudent[\"city\"] = \"New York\"\n# Updating an existing value\nstudent[\"age\"] = 26\n# Removing an item\nstudent.pop(\"grade\")\n# Iterating over a dictionary",
+        "detail": "dict",
+        "documentation": {}
+    },
+    {
+        "label": "student",
+        "kind": 5,
+        "importPath": "dict",
+        "description": "dict",
+        "peekOfCode": "student = {\"name\": \"Alice\", \"age\": 25, \"grade\": \"A\"}\n# Adding a new key-value pair\nstudent[\"city\"] = \"New York\"\n# Updating an existing value\nstudent[\"age\"] = 26\n# Removing an item\nstudent.pop(\"grade\")\n# Iterating over a dictionary\nfor key, value in student.items():\n    print(key, \":\", value)",
+        "detail": "dict",
+        "documentation": {}
+    },
+    {
+        "label": "student[\"city\"]",
+        "kind": 5,
+        "importPath": "dict",
+        "description": "dict",
+        "peekOfCode": "student[\"city\"] = \"New York\"\n# Updating an existing value\nstudent[\"age\"] = 26\n# Removing an item\nstudent.pop(\"grade\")\n# Iterating over a dictionary\nfor key, value in student.items():\n    print(key, \":\", value)",
+        "detail": "dict",
+        "documentation": {}
+    },
+    {
+        "label": "student[\"age\"]",
+        "kind": 5,
+        "importPath": "dict",
+        "description": "dict",
+        "peekOfCode": "student[\"age\"] = 26\n# Removing an item\nstudent.pop(\"grade\")\n# Iterating over a dictionary\nfor key, value in student.items():\n    print(key, \":\", value)",
+        "detail": "dict",
+        "documentation": {}
+    },
+    {
+        "label": "obj",
+        "kind": 5,
+        "importPath": "jason",
+        "description": "jason",
+        "peekOfCode": "obj = {\n    \"name\": \"Aatif\",\n    \"age\": 20\n}\nfile = open(\"data.json\", \"w\")\njson.dump(obj, file)\nfile.close()",
+        "detail": "jason",
+        "documentation": {}
+    },
+    {
+        "label": "file",
+        "kind": 5,
+        "importPath": "jason",
+        "description": "jason",
+        "peekOfCode": "file = open(\"data.json\", \"w\")\njson.dump(obj, file)\nfile.close()",
+        "detail": "jason",
+        "documentation": {}
+    },
+    {
+        "label": "my_list",
+        "kind": 5,
+        "importPath": "list",
+        "description": "list",
+        "peekOfCode": "my_list = []\nnumbers = [1,2,3,4,5]\nmixed_list = [1,\"Hello\",3.14,True]\nmy_list.append(10)\nmy_list.extend([6,7,8])\nnumbers.append(9)\nprint(numbers)\nprint(f\"Updated list: {my_list}\")",
+        "detail": "list",
+        "documentation": {}
+    },
+    {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "list",
+        "description": "list",
+        "peekOfCode": "numbers = [1,2,3,4,5]\nmixed_list = [1,\"Hello\",3.14,True]\nmy_list.append(10)\nmy_list.extend([6,7,8])\nnumbers.append(9)\nprint(numbers)\nprint(f\"Updated list: {my_list}\")",
+        "detail": "list",
+        "documentation": {}
+    },
+    {
+        "label": "mixed_list",
+        "kind": 5,
+        "importPath": "list",
+        "description": "list",
+        "peekOfCode": "mixed_list = [1,\"Hello\",3.14,True]\nmy_list.append(10)\nmy_list.extend([6,7,8])\nnumbers.append(9)\nprint(numbers)\nprint(f\"Updated list: {my_list}\")",
+        "detail": "list",
+        "documentation": {}
+    },
+    {
+        "label": "squares",
+        "kind": 5,
+        "importPath": "list_comperhension",
+        "description": "list_comperhension",
+        "peekOfCode": "squares = [x**2 for x in range(5)]\nprint(squares)\nevens = [x for x in range(10) if x % 2 == 0]\nprint(evens)\nnumbers = [\"Even\" if x % 2 == 0 else \"Odd\" for x in range(5)]\nprint(numbers)\npairs = [(x, y) for x in range(2) for y in range(3)]\nprint(pairs)",
+        "detail": "list_comperhension",
+        "documentation": {}
+    },
+    {
+        "label": "evens",
+        "kind": 5,
+        "importPath": "list_comperhension",
+        "description": "list_comperhension",
+        "peekOfCode": "evens = [x for x in range(10) if x % 2 == 0]\nprint(evens)\nnumbers = [\"Even\" if x % 2 == 0 else \"Odd\" for x in range(5)]\nprint(numbers)\npairs = [(x, y) for x in range(2) for y in range(3)]\nprint(pairs)",
+        "detail": "list_comperhension",
+        "documentation": {}
+    },
+    {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "list_comperhension",
+        "description": "list_comperhension",
+        "peekOfCode": "numbers = [\"Even\" if x % 2 == 0 else \"Odd\" for x in range(5)]\nprint(numbers)\npairs = [(x, y) for x in range(2) for y in range(3)]\nprint(pairs)",
+        "detail": "list_comperhension",
+        "documentation": {}
+    },
+    {
+        "label": "pairs",
+        "kind": 5,
+        "importPath": "list_comperhension",
+        "description": "list_comperhension",
+        "peekOfCode": "pairs = [(x, y) for x in range(2) for y in range(3)]\nprint(pairs)",
+        "detail": "list_comperhension",
+        "documentation": {}
+    },
+    {
+        "label": "fruits",
+        "kind": 5,
+        "importPath": "loop",
+        "description": "loop",
+        "peekOfCode": "fruits = [\"Apple\",\"Banana\",\"Orange\"]\nfor fruit in fruits:\n    print(fruit)\nfor i in range(3):\n    print(i)\ncount = 0\nwhile count < 4:\n    print(count)\n    count += 1\nfor i in range(5):",
+        "detail": "loop",
+        "documentation": {}
+    },
+    {
+        "label": "count",
+        "kind": 5,
+        "importPath": "loop",
+        "description": "loop",
+        "peekOfCode": "count = 0\nwhile count < 4:\n    print(count)\n    count += 1\nfor i in range(5):\n    if i == 3:\n        break\n    print(i)",
+        "detail": "loop",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "a = 32\nb = 18\nsum = a+b\nprint(sum)\nprint(\"Hello world\")\nc = \"5600\"\nd = \"6500\"\nprint(int(b)+int(d))  #type casting",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "b = 18\nsum = a+b\nprint(sum)\nprint(\"Hello world\")\nc = \"5600\"\nd = \"6500\"\nprint(int(b)+int(d))  #type casting",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "sum",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "sum = a+b\nprint(sum)\nprint(\"Hello world\")\nc = \"5600\"\nd = \"6500\"\nprint(int(b)+int(d))  #type casting",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "c",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "c = \"5600\"\nd = \"6500\"\nprint(int(b)+int(d))  #type casting",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "d",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "d = \"6500\"\nprint(int(b)+int(d))  #type casting",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "'''code",
+        "kind": 5,
+        "importPath": "match",
+        "description": "match",
+        "peekOfCode": "'''code = 20000\nmatch code:\n    case 200:\n        print(\"Response ok\")\n        print(\"Good Job!\")\n    case 500:\n        print(\"Bad response\")\n    case 2000:\n        print(\"Worst response\")\n    case __:",
+        "detail": "match",
+        "documentation": {}
+    },
+    {
+        "label": "point",
+        "kind": 5,
+        "importPath": "match",
+        "description": "match",
+        "peekOfCode": "point = (3,4)\nmatch point:\n    case(0,0):\n        print(\"Origin\")\n    case(x,0):\n        print(f\"x-axis at {x}\")\n    case(0,y):\n        print((f\"y-axis at {y}\"))\n    case(x,y):\n        print((f\"Point at ({x},{y})\"))",
+        "detail": "match",
+        "documentation": {}
+    },
+    {
+        "label": "set1",
+        "kind": 5,
+        "importPath": "set",
+        "description": "set",
+        "peekOfCode": "set1 = {1, 2, 3, 4}\nset2 = {3, 4, 5, 6}\n# Union – combines all unique elements\nprint(set1 | set2)            # {1, 2, 3, 4, 5, 6}\nprint(set1.union(set2))       # same result\n# Intersection – common elements\nprint(set1 & set2)            # {3, 4}\nprint(set1.intersection(set2))# same result\n# Difference – in set1 but not in set2\nprint(set1 - set2)            # {1, 2}",
+        "detail": "set",
+        "documentation": {}
+    },
+    {
+        "label": "set2",
+        "kind": 5,
+        "importPath": "set",
+        "description": "set",
+        "peekOfCode": "set2 = {3, 4, 5, 6}\n# Union – combines all unique elements\nprint(set1 | set2)            # {1, 2, 3, 4, 5, 6}\nprint(set1.union(set2))       # same result\n# Intersection – common elements\nprint(set1 & set2)            # {3, 4}\nprint(set1.intersection(set2))# same result\n# Difference – in set1 but not in set2\nprint(set1 - set2)            # {1, 2}\nprint(set1.difference(set2))  # same result",
+        "detail": "set",
+        "documentation": {}
+    },
+    {
+        "label": "'''name",
+        "kind": 5,
+        "importPath": "string",
+        "description": "string",
+        "peekOfCode": "'''name = \"Aatif\"\nname_1 = \" saman\"\nprint(name.upper())\nprint(name.lower())\nprint(name.endswith(\"if\"))\nprint(name_1.strip())'''\ns = \"my self aatif\"\nprint(len(s))\nprint(s.count(\"a\"))\nprint(s[0:5])",
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "name_1",
+        "kind": 5,
+        "importPath": "string",
+        "description": "string",
+        "peekOfCode": "name_1 = \" saman\"\nprint(name.upper())\nprint(name.lower())\nprint(name.endswith(\"if\"))\nprint(name_1.strip())'''\ns = \"my self aatif\"\nprint(len(s))\nprint(s.count(\"a\"))\nprint(s[0:5])",
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "string",
+        "description": "string",
+        "peekOfCode": "s = \"my self aatif\"\nprint(len(s))\nprint(s.count(\"a\"))\nprint(s[0:5])",
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "'''name",
+        "kind": 5,
+        "importPath": "string_formate",
+        "description": "string_formate",
+        "peekOfCode": "'''name = \"Alice\"\nage = 25\nprint(\"My name is {} and I am {} years old.\".format(name, age))'''\nname = \"Aatif\"\nage = 21\nprint(f\"My name is {name} and I am {age} years old.\")\na = 5\nb = 10\nprint(f\"Sum of {a} and {b} is {a+b}\")\npi = 3.14159",
+        "detail": "string_formate",
+        "documentation": {}
+    },
+    {
+        "label": "age",
+        "kind": 5,
+        "importPath": "string_formate",
+        "description": "string_formate",
+        "peekOfCode": "age = 25\nprint(\"My name is {} and I am {} years old.\".format(name, age))'''\nname = \"Aatif\"\nage = 21\nprint(f\"My name is {name} and I am {age} years old.\")\na = 5\nb = 10\nprint(f\"Sum of {a} and {b} is {a+b}\")\npi = 3.14159\nprint(f\"Pi rounded to 2 decimal places is {pi:.2f}\")",
+        "detail": "string_formate",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "string_formate",
+        "description": "string_formate",
+        "peekOfCode": "name = \"Aatif\"\nage = 21\nprint(f\"My name is {name} and I am {age} years old.\")\na = 5\nb = 10\nprint(f\"Sum of {a} and {b} is {a+b}\")\npi = 3.14159\nprint(f\"Pi rounded to 2 decimal places is {pi:.2f}\")\nprint(f\"{'Python':<10}\")\nprint(f\"{'Python':>10}\")",
+        "detail": "string_formate",
+        "documentation": {}
+    },
+    {
+        "label": "age",
+        "kind": 5,
+        "importPath": "string_formate",
+        "description": "string_formate",
+        "peekOfCode": "age = 21\nprint(f\"My name is {name} and I am {age} years old.\")\na = 5\nb = 10\nprint(f\"Sum of {a} and {b} is {a+b}\")\npi = 3.14159\nprint(f\"Pi rounded to 2 decimal places is {pi:.2f}\")\nprint(f\"{'Python':<10}\")\nprint(f\"{'Python':>10}\")\nprint(f\"{'Python':^10}\")",
+        "detail": "string_formate",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "string_formate",
+        "description": "string_formate",
+        "peekOfCode": "a = 5\nb = 10\nprint(f\"Sum of {a} and {b} is {a+b}\")\npi = 3.14159\nprint(f\"Pi rounded to 2 decimal places is {pi:.2f}\")\nprint(f\"{'Python':<10}\")\nprint(f\"{'Python':>10}\")\nprint(f\"{'Python':^10}\")",
+        "detail": "string_formate",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "string_formate",
+        "description": "string_formate",
+        "peekOfCode": "b = 10\nprint(f\"Sum of {a} and {b} is {a+b}\")\npi = 3.14159\nprint(f\"Pi rounded to 2 decimal places is {pi:.2f}\")\nprint(f\"{'Python':<10}\")\nprint(f\"{'Python':>10}\")\nprint(f\"{'Python':^10}\")",
+        "detail": "string_formate",
+        "documentation": {}
+    },
+    {
+        "label": "pi",
+        "kind": 5,
+        "importPath": "string_formate",
+        "description": "string_formate",
+        "peekOfCode": "pi = 3.14159\nprint(f\"Pi rounded to 2 decimal places is {pi:.2f}\")\nprint(f\"{'Python':<10}\")\nprint(f\"{'Python':>10}\")\nprint(f\"{'Python':^10}\")",
+        "detail": "string_formate",
+        "documentation": {}
+    }
+]
